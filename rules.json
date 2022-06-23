@@ -1,14 +1,26 @@
 [
-	{
-		"name": "maatwerk",
-		"description": "Combinaties met 'maatwerk' (maatwerkwebsite, maatwerkoplossing etc.) worden bij ons losgeschreven.",
-		"pattern": "/maatwerk\\w+/gim",
-		"type": "spelling"
-	},
-	{
-		"name": "jij wilt, kunt, zult",
-		"description": "We gebruiken in de tweede persoon (jij/je) altijd 'wilt', 'kunt' en 'zult' i.p.v. 'wil', 'kan' en 'zal'",
-		"pattern": "/wil(?=[\\s|,|\\.])|kan|zal/gim",
-		"type": "grammar"
-	}
+    {
+        "name": "maatwerk",
+        "description": "Combinaties met 'maatwerk' (maatwerkwebsite, maatwerkoplossing etc.) - die officieel aan elkaar moeten - worden bij ons losgeschreven.",
+        "pattern": "/maatwerk\\w+/gim",
+        "type": "spelling"
+    },
+    {
+        "name": "online",
+        "description": "Combinaties met 'online' (onlinemarketing etc.) - die officieel aan elkaar moeten - worden bij ons losgeschreven. Tenzij er combinaties met een derde woord worden gemaakt en 'online' alleen iets zegt over het tweede woord: bijvoorbeeld onlinemarketingstrategie en niet online marketingstrategie of online marketing strategie.",
+        "pattern": "/online(?!marketingstrategie)\\w+/gim",
+        "type": "spelling"
+    },
+    {
+        "name": "jij wilt, kunt, zult",
+        "description": "We gebruiken in de tweede persoon (jij/je) altijd 'wilt', 'kunt' en 'zult' i.p.v. 'wil', 'kan' en 'zal'",
+        "pattern": "/wil(?=[\\s,\\.])|kan|zal/gim",
+        "type": "grammar"
+    },
+    {
+        "name": "Tutoyeren: je/jij/jouw",
+        "description": "We tutoyeren in alle teksten op de site; we gebruiken je/jij/jouw i.p.v. u/uw.",
+        "pattern": "/(?<=[\\s,\\.:;\\(\\)])u(?=[\\s,\\.:;\\(\\)])|(?<!\\w)uw(?=[\\s])/gim",
+        "type": "grammar"
+    }
 ]

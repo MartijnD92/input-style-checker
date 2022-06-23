@@ -24,6 +24,7 @@ label {
 
 .input {
     width: 100%;
+    max-width: 500px;
     display: block;
     background-color: #eee;
     border: 0;
@@ -40,9 +41,9 @@ label {
     }
 
     & .spelling {
-      text-decoration: hsla(0, 100%, 50%, 0.75) wavy underline 1.5px;
+        text-decoration: hsla(284, 100%, 50%, 0.75) wavy underline 1.5px;
     }
     & .grammar {
-      text-decoration: hsla(240, 100%, 50%, 0.75) wavy underline 1.5px;
+        text-decoration: hsla(240, 100%, 50%, 0.75) wavy underline 1.5px;
     }
 }
