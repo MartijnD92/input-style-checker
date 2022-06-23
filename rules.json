@@ -1,0 +1,14 @@
+[
+	{
+		"name": "maatwerk",
+		"description": "Combinaties met 'maatwerk' (maatwerkwebsite, maatwerkoplossing etc.) worden bij ons losgeschreven.",
+		"pattern": "/maatwerk\\w+/gim",
+		"type": "spelling"
+	},
+	{
+		"name": "jij wilt, kunt, zult",
+		"description": "We gebruiken in de tweede persoon (jij/je) altijd 'wilt', 'kunt' en 'zult' i.p.v. 'wil', 'kan' en 'zal'",
+		"pattern": "/wil(?=[\\s|,|\\.])|kan|zal/gim",
+		"type": "grammar"
+	}
+]

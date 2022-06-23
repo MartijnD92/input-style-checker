@@ -1,0 +1,48 @@
+body {
+    background: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+label {
+    width: 100%;
+    display: block;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.input {
+    width: 100%;
+    display: block;
+    background-color: #eee;
+    border: 0;
+    font-size: inherit;
+    padding: 5px 12px;
+    margin-top: 10px;
+
+    &--paragraph {
+        height: 250px;
+        background-color: #eee;
+        color: black;
+        padding: 10px;
+        font-size: inherit;
+    }
+
+    & .spelling {
+      text-decoration: hsla(0, 100%, 50%, 0.75) wavy underline 1.5px;
+    }
+    & .grammar {
+      text-decoration: hsla(240, 100%, 50%, 0.75) wavy underline 1.5px;
+    }
+}
